@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         buttonText.setTitle("Start", for: .normal)
+        buttonText.layer.cornerRadius = 10
         
         redLightView.alpha = lightIsOff
         yellowLightView.alpha = lightIsOff
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         redLightView.layer.cornerRadius = redLightView.frame.width / 2
         yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
         greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
-  
+        
         print("\(redLightView.frame.height)")
     }
     
@@ -64,6 +65,6 @@ class ViewController: UIViewController {
 
 extension ViewController {
     enum CurrentLight {
-    case red, yellow, green
+        case red, yellow, green
     }
 }
