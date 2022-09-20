@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,63 +13,57 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_World" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="238" translatesAutoresizingMaskIntoConstraints="NO" id="LQr-gN-Ydq">
-                                <rect key="frame" x="120" y="79" width="153" height="719"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-Vd-gkg">
+                                <rect key="frame" x="122.5" y="40" width="130" height="430"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="topRight" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="DSr-96-UOm">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="257"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSg-o5-JCe">
-                                                <rect key="frame" x="0.0" y="0.0" width="153" height="75.666666666666671"/>
-                                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roG-2J-qew">
-                                                <rect key="frame" x="0.0" y="90.666666666666657" width="153" height="75.666666666666657"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-2w-cCd">
-                                                <rect key="frame" x="0.0" y="181.33333333333331" width="153" height="75.666666666666686"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="roG-2J-qew" firstAttribute="width" secondItem="CSg-o5-JCe" secondAttribute="width" id="1yR-pb-Fxx"/>
-                                            <constraint firstItem="TRH-2w-cCd" firstAttribute="height" secondItem="CSg-o5-JCe" secondAttribute="height" id="651-ry-qXo"/>
-                                            <constraint firstItem="TRH-2w-cCd" firstAttribute="width" secondItem="CSg-o5-JCe" secondAttribute="width" id="E1B-qR-gp3"/>
-                                            <constraint firstItem="roG-2J-qew" firstAttribute="height" secondItem="CSg-o5-JCe" secondAttribute="height" id="ElN-bU-JzY"/>
-                                        </constraints>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS2-Fi-1dt">
-                                        <rect key="frame" x="0.0" y="495" width="153" height="224"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrC-Up-M1o">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="AbV-2D-w0U"/>
-                                        </connections>
-                                    </button>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MrC-Up-M1o" secondAttribute="height" multiplier="1:1" id="JCL-DA-VVd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-i9-7pI">
+                                        <rect key="frame" x="0.0" y="150" width="130" height="130"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FP-DC-cvg">
+                                        <rect key="frame" x="0.0" y="300" width="130" height="130"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-5X-kYo">
+                                <rect key="frame" x="131.5" y="609" width="112" height="38"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="soT-KP-wnE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LQr-gN-Ydq" secondAttribute="trailing" constant="120" id="AlX-Kv-qBx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LQr-gN-Ydq" secondAttribute="bottom" constant="20" id="XOs-Je-9hA"/>
-                            <constraint firstItem="LQr-gN-Ydq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="c5Z-j1-rbm"/>
-                            <constraint firstItem="LQr-gN-Ydq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="tCv-2E-k9H"/>
+                            <constraint firstItem="DxC-5X-kYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ck3-PB-54N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DxC-5X-kYo" secondAttribute="bottom" constant="20" id="Ufe-UU-M9n"/>
+                            <constraint firstItem="DxC-5X-kYo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="112:667" id="cJF-we-Xtt"/>
+                            <constraint firstItem="MrC-Up-M1o" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.194903" id="oQJ-Hf-Zjk"/>
+                            <constraint firstItem="uh1-Vd-gkg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="wr8-73-gVf"/>
+                            <constraint firstItem="uh1-Vd-gkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ync-4H-zA6"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonText" destination="kS2-Fi-1dt" id="5gU-Nn-h1u"/>
-                        <outlet property="greenLightView" destination="TRH-2w-cCd" id="Lsb-q5-OtM"/>
-                        <outlet property="redLightView" destination="CSg-o5-JCe" id="bCV-hQ-puc"/>
-                        <outlet property="yellowLightView" destination="roG-2J-qew" id="KHU-CW-lg8"/>
+                        <outlet property="buttonText" destination="DxC-5X-kYo" id="NgN-TG-Bai"/>
+                        <outlet property="greenLightView" destination="0FP-DC-cvg" id="A1g-FY-iNS"/>
+                        <outlet property="redLightView" destination="MrC-Up-M1o" id="x6F-nx-mE9"/>
+                        <outlet property="yellowLightView" destination="MIV-i9-7pI" id="Frc-Zc-JqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
